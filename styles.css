@@ -114,6 +114,28 @@ body {
 }
 
 
+.logo_site img {
+
+    display: block;
+
+    height: 40px;
+
+    width: auto;
+
+}
+
+
+.logo_site a {
+
+    display: flex;
+
+    align-items: center;
+
+    text-decoration: none;
+
+}
+
+
 /* MENU */
 
 nav {
@@ -1124,6 +1146,13 @@ footer p {
         width: 100%;
 
         justify-content: center;
+
+    }
+
+
+    .logo_site img {
+
+        height: 32px;
 
     }
 

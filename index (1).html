@@ -10,10 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
-    
 
     <style>
 
@@ -58,7 +58,7 @@
             height: 100%;
             width: 20%;
             background: var(--cor-principal);
-            transition: .3s;
+            transition: 0.3s;
         }
 
         .contador {
@@ -92,8 +92,9 @@
             border: 1px solid var(--borda);
             border-radius: 12px;
             cursor: pointer;
-            transition: .2s;
+            transition: 0.2s;
             font-weight: 600;
+            background: transparent;
         }
 
         .opcao:hover {
@@ -132,14 +133,22 @@
             flex-wrap: wrap;
         }
 
-        @media(max-width:600px){
+        @media(max-width: 600px) {
 
-            .quiz_intro h1{
-                font-size:38px;
+            .quiz {
+                margin: 60px auto;
             }
 
-            .pergunta h2{
-                font-size:27px;
+            .quiz_intro h1 {
+                font-size: 38px;
+            }
+
+            .pergunta h2 {
+                font-size: 27px;
+            }
+
+            .resultado h2 {
+                font-size: 34px;
             }
 
         }
@@ -147,6 +156,7 @@
     </style>
 
 </head>
+
 
 <body>
 
@@ -191,10 +201,15 @@
         1 de 5
     </div>
 
+
     <div class="progresso">
+
         <div class="barra" id="barra"></div>
+
     </div>
 
+
+    <!-- PERGUNTA 1 -->
 
     <div class="pergunta ativa">
 
@@ -202,18 +217,28 @@
 
         <div class="opcoes">
 
-            <div class="opcao" data-pontos="1">Apresentar meu negócio</div>
+            <div class="opcao" data-pontos="1">
+                Apresentar meu negócio
+            </div>
 
-            <div class="opcao" data-pontos="2">Mostrar meus serviços</div>
+            <div class="opcao" data-pontos="2">
+                Mostrar meus serviços
+            </div>
 
-            <div class="opcao" data-pontos="3">Mostrar produtos ou catálogo</div>
+            <div class="opcao" data-pontos="3">
+                Mostrar produtos ou catálogo
+            </div>
 
-            <div class="opcao" data-pontos="3">Receber contatos e orçamentos</div>
+            <div class="opcao" data-pontos="3">
+                Receber contatos e orçamentos
+            </div>
 
         </div>
 
     </div>
 
+
+    <!-- PERGUNTA 2 -->
 
     <div class="pergunta">
 
@@ -221,18 +246,28 @@
 
         <div class="opcoes">
 
-            <div class="opcao" data-pontos="1">Informações básicas</div>
+            <div class="opcao" data-pontos="1">
+                Informações básicas
+            </div>
 
-            <div class="opcao" data-pontos="2">Serviços</div>
+            <div class="opcao" data-pontos="2">
+                Serviços
+            </div>
 
-            <div class="opcao" data-pontos="3">Produtos</div>
+            <div class="opcao" data-pontos="3">
+                Produtos
+            </div>
 
-            <div class="opcao" data-pontos="3">Portfólio e trabalhos</div>
+            <div class="opcao" data-pontos="3">
+                Portfólio e trabalhos
+            </div>
 
         </div>
 
     </div>
 
+
+    <!-- PERGUNTA 3 -->
 
     <div class="pergunta">
 
@@ -240,18 +275,28 @@
 
         <div class="opcoes">
 
-            <div class="opcao" data-pontos="1">Uma página</div>
+            <div class="opcao" data-pontos="1">
+                Uma página
+            </div>
 
-            <div class="opcao" data-pontos="2">Algumas páginas</div>
+            <div class="opcao" data-pontos="2">
+                Algumas páginas
+            </div>
 
-            <div class="opcao" data-pontos="3">Um site completo</div>
+            <div class="opcao" data-pontos="3">
+                Um site completo
+            </div>
 
-            <div class="opcao" data-pontos="2">Não sei ainda</div>
+            <div class="opcao" data-pontos="2">
+                Não sei ainda
+            </div>
 
         </div>
 
     </div>
 
+
+    <!-- PERGUNTA 4 -->
 
     <div class="pergunta">
 
@@ -259,18 +304,28 @@
 
         <div class="opcoes">
 
-            <div class="opcao" data-pontos="1">WhatsApp</div>
+            <div class="opcao" data-pontos="1">
+                WhatsApp
+            </div>
 
-            <div class="opcao" data-pontos="2">Formulário</div>
+            <div class="opcao" data-pontos="2">
+                Formulário
+            </div>
 
-            <div class="opcao" data-pontos="2">Instagram</div>
+            <div class="opcao" data-pontos="2">
+                Instagram
+            </div>
 
-            <div class="opcao" data-pontos="3">Todos eles</div>
+            <div class="opcao" data-pontos="3">
+                Todos eles
+            </div>
 
         </div>
 
     </div>
 
+
+    <!-- PERGUNTA 5 -->
 
     <div class="pergunta">
 
@@ -278,16 +333,24 @@
 
         <div class="opcoes">
 
-            <div class="opcao" data-pontos="1">Simples e objetivo</div>
+            <div class="opcao" data-pontos="1">
+                Simples e objetivo
+            </div>
 
-            <div class="opcao" data-pontos="2">Mais completo</div>
+            <div class="opcao" data-pontos="2">
+                Mais completo
+            </div>
 
-            <div class="opcao" data-pontos="3">Totalmente personalizado</div>
+            <div class="opcao" data-pontos="3">
+                Totalmente personalizado
+            </div>
 
         </div>
 
     </div>
 
+
+    <!-- RESULTADO -->
 
     <div class="resultado" id="resultado">
 
@@ -320,34 +383,44 @@
 
 const perguntas = document.querySelectorAll(".pergunta");
 
+const opcoes = document.querySelectorAll(".opcao");
+
 const barra = document.getElementById("barra");
 
 const contador = document.getElementById("contador");
 
 const resultado = document.getElementById("resultado");
 
-let atual = 0;
+let perguntaAtual = 0;
 
 let pontos = 0;
 
 
-document.querySelectorAll(".opcao").forEach(opcao => {
+// Quando clicar em uma opção
 
-    opcao.addEventListener("click", () => {
+opcoes.forEach(function(opcao) {
 
-        pontos += Number(opcao.dataset.pontos);
+    opcao.addEventListener("click", function() {
 
-        perguntas[atual].classList.remove("ativa");
+        // Adiciona os pontos da resposta
+        pontos += Number(this.dataset.pontos);
 
-        atual++;
+        // Esconde pergunta atual
+        perguntas[perguntaAtual].classList.remove("ativa");
 
-        if(atual < perguntas.length){
+        // Vai para próxima pergunta
+        perguntaAtual++;
 
-            perguntas[atual].classList.add("ativa");
+        // Verifica se ainda existem perguntas
+        if (perguntaAtual < perguntas.length) {
 
-            contador.textContent = `${atual + 1} de ${perguntas.length}`;
+            perguntas[perguntaAtual].classList.add("ativa");
 
-            barra.style.width = `${((atual + 1) / perguntas.length) * 100}%`;
+            contador.textContent =
+                (perguntaAtual + 1) + " de " + perguntas.length;
+
+            barra.style.width =
+                ((perguntaAtual + 1) / perguntas.length) * 100 + "%";
 
         } else {
 
@@ -360,7 +433,9 @@ document.querySelectorAll(".opcao").forEach(opcao => {
 });
 
 
-function mostrarResultado(){
+// Mostra o resultado
+
+function mostrarResultado() {
 
     contador.style.display = "none";
 
@@ -368,46 +443,58 @@ function mostrarResultado(){
 
     resultado.style.display = "block";
 
-    let nome;
 
-    let titulo;
+    let nome = "";
 
-    let texto;
+    let titulo = "";
 
-    let link;
+    let texto = "";
+
+    let link = "";
 
 
-    if(pontos <= 7){
+    // PLANO ESSENCIAL
+
+    if (pontos <= 7) {
 
         nome = "PLANO ESSENCIAL";
 
         titulo = "Comece sua presença digital.";
 
-        texto = "Pelas suas respostas, um site objetivo e profissional pode atender muito bem ao que você procura, apresentando seu negócio e facilitando o contato com seus clientes.";
+        texto =
+            "Pelas suas respostas, um site objetivo e profissional pode atender muito bem ao que você procura, apresentando seu negócio e facilitando o contato com seus clientes.";
 
         link = "plano1.html";
 
     }
 
-    else if(pontos <= 11){
+
+    // PLANO PROFISSIONAL
+
+    else if (pontos <= 11) {
 
         nome = "PLANO PROFISSIONAL";
 
         titulo = "Apresente seu negócio por completo.";
 
-        texto = "Suas respostas indicam que uma estrutura mais completa pode fazer sentido, com páginas para serviços, informações, galeria e diferentes formas de contato.";
+        texto =
+            "Suas respostas indicam que uma estrutura mais completa pode fazer sentido, com páginas para serviços, informações, galeria e diferentes formas de contato.";
 
         link = "plano2.html";
 
     }
 
-    else{
+
+    // PLANO PERSONALIZADO
+
+    else {
 
         nome = "PLANO PERSONALIZADO";
 
         titulo = "Um projeto feito para você.";
 
-        texto = "Pelo que você procura, um projeto mais personalizado pode ser a melhor opção, permitindo mais páginas, recursos e uma estrutura adaptada às necessidades do seu negócio.";
+        texto =
+            "Pelo que você procura, um projeto mais personalizado pode ser a melhor opção, permitindo mais páginas, recursos e uma estrutura adaptada às necessidades do seu negócio.";
 
         link = "plano3.html";
 
@@ -425,6 +512,7 @@ function mostrarResultado(){
 }
 
 </script>
+
 
 </body>
 
