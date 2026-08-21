@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Descubra seu site | GR Digital</title>
+    <title>GR Digital | Sites profissionais para o seu negócio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,148 +15,7 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <style>
-
-        .quiz {
-            max-width: 760px;
-            margin: 100px auto;
-            padding: 0 20px;
-        }
-
-        .quiz_intro {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .quiz_intro p {
-            color: var(--cor-principal);
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
-
-        .quiz_intro h1 {
-            font-family: var(--fonte-titulo);
-            font-size: 48px;
-            margin: 15px 0;
-        }
-
-        .quiz_intro span {
-            color: var(--texto-suave);
-            line-height: 1.7;
-        }
-
-        .progresso {
-            height: 8px;
-            background: var(--borda);
-            border-radius: 20px;
-            margin-bottom: 40px;
-            overflow: hidden;
-        }
-
-        .barra {
-            height: 100%;
-            width: 20%;
-            background: var(--cor-principal);
-            transition: 0.3s;
-        }
-
-        .contador {
-            text-align: right;
-            font-size: 13px;
-            color: var(--texto-suave);
-            margin-bottom: 10px;
-        }
-
-        .pergunta {
-            display: none;
-        }
-
-        .pergunta.ativa {
-            display: block;
-        }
-
-        .pergunta h2 {
-            font-family: var(--fonte-titulo);
-            font-size: 32px;
-            margin-bottom: 30px;
-        }
-
-        .opcoes {
-            display: grid;
-            gap: 15px;
-        }
-
-        .opcao {
-            padding: 20px;
-            border: 1px solid var(--borda);
-            border-radius: 12px;
-            cursor: pointer;
-            transition: 0.2s;
-            font-weight: 600;
-            background: transparent;
-        }
-
-        .opcao:hover {
-            border-color: var(--cor-principal);
-            transform: translateY(-2px);
-        }
-
-        .resultado {
-            display: none;
-            text-align: center;
-        }
-
-        .resultado h2 {
-            font-family: var(--fonte-titulo);
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
-
-        .resultado .plano {
-            color: var(--cor-principal);
-            font-weight: 700;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
-        }
-
-        .resultado p {
-            color: var(--texto-suave);
-            line-height: 1.8;
-            margin-bottom: 30px;
-        }
-
-        .botoes_resultado {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        @media(max-width: 600px) {
-
-            .quiz {
-                margin: 60px auto;
-            }
-
-            .quiz_intro h1 {
-                font-size: 38px;
-            }
-
-            .pergunta h2 {
-                font-size: 27px;
-            }
-
-            .resultado h2 {
-                font-size: 34px;
-            }
-
-        }
-
-    </style>
-
 </head>
-
 
 <body>
 
@@ -171,6 +30,7 @@
         <a href="index.html#planos">Planos</a>
         <a href="descubra.html">Descubra seu site</a>
         <a href="index.html#contato">Contato</a>
+        <a href="https://instagram.com/" target="_blank" class="instagram_link">Instagram</a>
     </nav>
 
     <a href="https://wa.me/5548998230477" class="btn_wpp">
@@ -182,196 +42,213 @@
 
 <main>
 
-<section class="quiz">
+<!-- HERO -->
+<section class="hero">
 
-    <div class="quiz_intro">
+    <div class="hero_content center">
 
-        <p>DESCUBRA SEU SITE</p>
+        <p class="hero_tag">SITES PROFISSIONAIS</p>
 
-        <h1>Qual site combina com seu negócio?</h1>
+        <h1>Transforme seu negócio em uma <span>presença digital</span> de verdade.</h1>
 
-        <span>
-            Responda algumas perguntas rápidas e descubra qual tipo de projeto pode atender melhor aos seus objetivos.
-        </span>
+        <p class="hero_text">
+            Criamos sites rápidos, bonitos e feitos sob medida para apresentar seu negócio, atrair clientes e facilitar o contato — sem complicação.
+        </p>
 
-    </div>
-
-
-    <div class="contador" id="contador">
-        1 de 5
-    </div>
-
-
-    <div class="progresso">
-
-        <div class="barra" id="barra"></div>
-
-    </div>
-
-
-    <!-- PERGUNTA 1 -->
-
-    <div class="pergunta ativa">
-
-        <h2>O que você quer alcançar com seu site?</h2>
-
-        <div class="opcoes">
-
-            <div class="opcao" data-pontos="1">
-                Apresentar meu negócio
-            </div>
-
-            <div class="opcao" data-pontos="2">
-                Mostrar meus serviços
-            </div>
-
-            <div class="opcao" data-pontos="3">
-                Mostrar produtos ou catálogo
-            </div>
-
-            <div class="opcao" data-pontos="3">
-                Receber contatos e orçamentos
-            </div>
-
+        <div class="hero_buttons">
+            <a href="descubra.html" class="btn_principal">Descubra seu site</a>
+            <a href="index.html#planos" class="btn_secundario">Ver planos</a>
         </div>
 
     </div>
 
+</section>
 
-    <!-- PERGUNTA 2 -->
 
-    <div class="pergunta">
+<!-- SOBRE -->
+<section id="sobre">
 
-        <h2>O que você gostaria de mostrar?</h2>
+    <div class="section_title">
+        <p>SOBRE A GR DIGITAL</p>
+        <h2>Sites feitos para gerar resultado, não só existir.</h2>
+    </div>
 
-        <div class="opcoes">
+    <div class="sobre_grid">
 
-            <div class="opcao" data-pontos="1">
-                Informações básicas
+        <div class="sobre_texto">
+            <p>Na GR Digital, cada projeto é pensado do zero para atender às necessidades reais do seu negócio — nada de templates genéricos que não conversam com sua marca.</p>
+            <p>Do primeiro contato à entrega, cuidamos do design, da estrutura e da performance para que seu site funcione como uma ferramenta de vendas, não apenas um cartão de visitas digital.</p>
+        </div>
+
+        <div class="sobre_dados">
+            <div>
+                <strong>100%</strong>
+                <span>Projetos personalizados</span>
             </div>
-
-            <div class="opcao" data-pontos="2">
-                Serviços
+            <div>
+                <strong>+30</strong>
+                <span>Negócios atendidos</span>
             </div>
-
-            <div class="opcao" data-pontos="3">
-                Produtos
+            <div>
+                <strong>5★</strong>
+                <span>Suporte próximo</span>
             </div>
-
-            <div class="opcao" data-pontos="3">
-                Portfólio e trabalhos
-            </div>
-
         </div>
 
     </div>
 
+</section>
 
-    <!-- PERGUNTA 3 -->
 
-    <div class="pergunta">
+<!-- BENEFÍCIOS -->
+<section class="beneficios">
 
-        <h2>Quantas páginas você imagina?</h2>
+    <div class="section_title center">
+        <p>POR QUE ESCOLHER A GR DIGITAL</p>
+        <h2>Mais do que um site, uma parceria.</h2>
+    </div>
 
-        <div class="opcoes">
+    <div class="beneficios_container">
 
-            <div class="opcao" data-pontos="1">
-                Uma página
-            </div>
+        <div class="beneficio_card">
+            <p class="beneficio_numero">01</p>
+            <h3>Design personalizado</h3>
+            <p>Cada site é desenhado especialmente para a identidade do seu negócio.</p>
+        </div>
 
-            <div class="opcao" data-pontos="2">
-                Algumas páginas
-            </div>
+        <div class="beneficio_card">
+            <p class="beneficio_numero">02</p>
+            <h3>Responsivo</h3>
+            <p>Seu site funciona perfeitamente em celular, tablet e computador.</p>
+        </div>
 
-            <div class="opcao" data-pontos="3">
-                Um site completo
-            </div>
+        <div class="beneficio_card">
+            <p class="beneficio_numero">03</p>
+            <h3>Contato facilitado</h3>
+            <p>Botão de WhatsApp e formulários para transformar visitas em clientes.</p>
+        </div>
 
-            <div class="opcao" data-pontos="2">
-                Não sei ainda
-            </div>
-
+        <div class="beneficio_card">
+            <p class="beneficio_numero">04</p>
+            <h3>Suporte próximo</h3>
+            <p>Acompanhamento direto com você do início ao pós-entrega.</p>
         </div>
 
     </div>
 
+</section>
 
-    <!-- PERGUNTA 4 -->
 
-    <div class="pergunta">
+<!-- PLANOS -->
+<section id="planos">
 
-        <h2>Como seus clientes devem entrar em contato?</h2>
+    <div class="section_title center">
+        <p>PLANOS</p>
+        <h2>Escolha o plano ideal para o seu negócio.</h2>
+    </div>
 
-        <div class="opcoes">
+    <div class="planos_container">
 
-            <div class="opcao" data-pontos="1">
-                WhatsApp
-            </div>
+        <div class="plano_card">
+            <p class="plano_nome">ESSENCIAL</p>
+            <h3>Comece sua presença digital</h3>
+            <p class="plano_descricao">Uma página profissional e objetiva para apresentar seu negócio.</p>
+            <ul>
+                <li>✓ Página profissional</li>
+                <li>✓ Design responsivo</li>
+                <li>✓ Botão WhatsApp</li>
+                <li>✓ Galeria de fotos</li>
+            </ul>
+            <a href="plano1.html" class="btn_plano">Conhecer plano</a>
+        </div>
 
-            <div class="opcao" data-pontos="2">
-                Formulário
-            </div>
+        <div class="plano_card destaque">
+            <span class="mais_vendido">MAIS ESCOLHIDO</span>
+            <p class="plano_nome">PROFISSIONAL</p>
+            <h3>Apresente seu negócio por completo</h3>
+            <p class="plano_descricao">Uma presença digital mais completa, com mais páginas e recursos.</p>
+            <ul>
+                <li>✓ Tudo do Essencial</li>
+                <li>✓ Página Sobre e Serviços</li>
+                <li>✓ Depoimentos e Google Maps</li>
+                <li>✓ Formulário de contato</li>
+            </ul>
+            <a href="plano2.html" class="btn_plano">Conhecer plano</a>
+        </div>
 
-            <div class="opcao" data-pontos="2">
-                Instagram
-            </div>
-
-            <div class="opcao" data-pontos="3">
-                Todos eles
-            </div>
-
+        <div class="plano_card">
+            <p class="plano_nome">PERSONALIZADO</p>
+            <h3>Um projeto feito para você</h3>
+            <p class="plano_descricao">Site sob medida, com mais páginas e recursos avançados.</p>
+            <ul>
+                <li>✓ Tudo do Profissional</li>
+                <li>✓ Layout exclusivo</li>
+                <li>✓ Animações avançadas</li>
+                <li>✓ SEO avançado</li>
+            </ul>
+            <a href="plano3.html" class="btn_plano">Conhecer plano</a>
         </div>
 
     </div>
 
+</section>
 
-    <!-- PERGUNTA 5 -->
 
-    <div class="pergunta">
+<!-- GALERIA -->
+<section class="galeria" id="galeria">
 
-        <h2>Você imagina algo mais simples ou personalizado?</h2>
+    <div class="section_title center">
+        <p>PROJETOS</p>
+        <h2>Alguns trabalhos recentes.</h2>
+        <p class="galeria_texto">Confira exemplos de sites já desenvolvidos pela GR Digital.</p>
+    </div>
 
-        <div class="opcoes">
+    <div class="projetos_container">
 
-            <div class="opcao" data-pontos="1">
-                Simples e objetivo
+        <div class="projeto_card">
+            <div class="projeto_imagem">Loja Virtual</div>
+            <div class="projeto_info">
+                <h3>E-commerce</h3>
+                <p>Site para venda de produtos com catálogo completo.</p>
+                <span class="status">Concluído</span>
             </div>
+        </div>
 
-            <div class="opcao" data-pontos="2">
-                Mais completo
+        <div class="projeto_card">
+            <div class="projeto_imagem">Studio</div>
+            <div class="projeto_info">
+                <h3>Site institucional</h3>
+                <p>Apresentação de serviços para negócio local.</p>
+                <span class="status">Concluído</span>
             </div>
+        </div>
 
-            <div class="opcao" data-pontos="3">
-                Totalmente personalizado
+        <div class="projeto_card">
+            <div class="projeto_imagem">Portfólio</div>
+            <div class="projeto_info">
+                <h3>Landing page</h3>
+                <p>Página única para captação de clientes.</p>
+                <span class="status">Concluído</span>
             </div>
-
         </div>
 
     </div>
 
+</section>
 
-    <!-- RESULTADO -->
 
-    <div class="resultado" id="resultado">
+<!-- CONTATO -->
+<section class="contato" id="contato">
 
-        <p class="plano" id="nomePlano"></p>
+    <div class="contato_content">
+        <p>VAMOS CONVERSAR?</p>
+        <h2>Pronto para ter um site profissional?</h2>
+        <p>Fale com a GR Digital agora mesmo e vamos transformar seu negócio em uma presença digital de verdade.</p>
 
-        <h2 id="tituloResultado"></h2>
-
-        <p id="textoResultado"></p>
-
-        <div class="botoes_resultado">
-
-            <a id="linkPlano" class="btn_principal">
-                Conhecer este plano
-            </a>
-
-            <a href="https://wa.me/5548998230477" class="btn_secundario">
-                Falar com a GR Digital
-            </a>
-
+        <div class="contato_botoes">
+            <a href="https://wa.me/5548998230477" class="btn_principal">Chamar no WhatsApp</a>
+            <a href="https://instagram.com/" target="_blank" class="btn_instagram">Instagram</a>
         </div>
-
     </div>
 
 </section>
@@ -379,140 +256,18 @@
 </main>
 
 
-<script>
-
-const perguntas = document.querySelectorAll(".pergunta");
-
-const opcoes = document.querySelectorAll(".opcao");
-
-const barra = document.getElementById("barra");
-
-const contador = document.getElementById("contador");
-
-const resultado = document.getElementById("resultado");
-
-let perguntaAtual = 0;
-
-let pontos = 0;
-
-
-// Quando clicar em uma opção
-
-opcoes.forEach(function(opcao) {
-
-    opcao.addEventListener("click", function() {
-
-        // Adiciona os pontos da resposta
-        pontos += Number(this.dataset.pontos);
-
-        // Esconde pergunta atual
-        perguntas[perguntaAtual].classList.remove("ativa");
-
-        // Vai para próxima pergunta
-        perguntaAtual++;
-
-        // Verifica se ainda existem perguntas
-        if (perguntaAtual < perguntas.length) {
-
-            perguntas[perguntaAtual].classList.add("ativa");
-
-            contador.textContent =
-                (perguntaAtual + 1) + " de " + perguntas.length;
-
-            barra.style.width =
-                ((perguntaAtual + 1) / perguntas.length) * 100 + "%";
-
-        } else {
-
-            mostrarResultado();
-
-        }
-
-    });
-
-});
-
-
-// Mostra o resultado
-
-function mostrarResultado() {
-
-    contador.style.display = "none";
-
-    document.querySelector(".progresso").style.display = "none";
-
-    resultado.style.display = "block";
-
-
-    let nome = "";
-
-    let titulo = "";
-
-    let texto = "";
-
-    let link = "";
-
-
-    // PLANO ESSENCIAL
-
-    if (pontos <= 7) {
-
-        nome = "PLANO ESSENCIAL";
-
-        titulo = "Comece sua presença digital.";
-
-        texto =
-            "Pelas suas respostas, um site objetivo e profissional pode atender muito bem ao que você procura, apresentando seu negócio e facilitando o contato com seus clientes.";
-
-        link = "plano1.html";
-
-    }
-
-
-    // PLANO PROFISSIONAL
-
-    else if (pontos <= 11) {
-
-        nome = "PLANO PROFISSIONAL";
-
-        titulo = "Apresente seu negócio por completo.";
-
-        texto =
-            "Suas respostas indicam que uma estrutura mais completa pode fazer sentido, com páginas para serviços, informações, galeria e diferentes formas de contato.";
-
-        link = "plano2.html";
-
-    }
-
-
-    // PLANO PERSONALIZADO
-
-    else {
-
-        nome = "PLANO PERSONALIZADO";
-
-        titulo = "Um projeto feito para você.";
-
-        texto =
-            "Pelo que você procura, um projeto mais personalizado pode ser a melhor opção, permitindo mais páginas, recursos e uma estrutura adaptada às necessidades do seu negócio.";
-
-        link = "plano3.html";
-
-    }
-
-
-    document.getElementById("nomePlano").textContent = nome;
-
-    document.getElementById("tituloResultado").textContent = titulo;
-
-    document.getElementById("textoResultado").textContent = texto;
-
-    document.getElementById("linkPlano").href = link;
-
-}
-
-</script>
-
+<footer>
+    <h3>GR <span>digital</span></h3>
+    <p>Sites profissionais para o seu negócio.</p>
+    <div class="footer_links">
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#planos">Planos</a>
+        <a href="index.html#galeria">Projetos</a>
+        <a href="index.html#contato">Contato</a>
+        <a href="https://instagram.com/" target="_blank">Instagram</a>
+    </div>
+    <p class="copyright">© 2026 GR Digital. Todos os direitos reservados.</p>
+</footer>
 
 </body>
 
