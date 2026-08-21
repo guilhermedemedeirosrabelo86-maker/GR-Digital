@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Descubra seu site | GR Digital</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    
+
+    <style>
+
+        .quiz {
+            max-width: 760px;
+            margin: 100px auto;
+            padding: 0 20px;
+        }
+
+        .quiz_intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .quiz_intro p {
+            color: var(--cor-principal);
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .quiz_intro h1 {
+            font-family: var(--fonte-titulo);
+            font-size: 48px;
+            margin: 15px 0;
+        }
+
+        .quiz_intro span {
+            color: var(--texto-suave);
+            line-height: 1.7;
+        }
+
+        .progresso {
+            height: 8px;
+            background: var(--borda);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            overflow: hidden;
+        }
+
+        .barra {
+            height: 100%;
+            width: 20%;
+            background: var(--cor-principal);
+            transition: .3s;
+        }
+
+        .contador {
+            text-align: right;
+            font-size: 13px;
+            color: var(--texto-suave);
+            margin-bottom: 10px;
+        }
+
+        .pergunta {
+            display: none;
+        }
+
+        .pergunta.ativa {
+            display: block;
+        }
+
+        .pergunta h2 {
+            font-family: var(--fonte-titulo);
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .opcoes {
+            display: grid;
+            gap: 15px;
+        }
+
+        .opcao {
+            padding: 20px;
+            border: 1px solid var(--borda);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: .2s;
+            font-weight: 600;
+        }
+
+        .opcao:hover {
+            border-color: var(--cor-principal);
+            transform: translateY(-2px);
+        }
+
+        .resultado {
+            display: none;
+            text-align: center;
+        }
+
+        .resultado h2 {
+            font-family: var(--fonte-titulo);
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .resultado .plano {
+            color: var(--cor-principal);
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .resultado p {
+            color: var(--texto-suave);
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .botoes_resultado {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        @media(max-width:600px){
+
+            .quiz_intro h1{
+                font-size:38px;
+            }
+
+            .pergunta h2{
+                font-size:27px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header class="container_header">
+
+    <div class="logo_site">
+        <h2>GR <span>digital</span></h2>
+    </div>
+
+    <nav>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#planos">Planos</a>
+        <a href="descubra.html">Descubra seu site</a>
+        <a href="index.html#contato">Contato</a>
+    </nav>
+
+    <a href="https://wa.me/5548998230477" class="btn_wpp">
+        Chamar no WhatsApp
+    </a>
+
+</header>
+
+
+<main>
+
+<section class="quiz">
+
+    <div class="quiz_intro">
+
+        <p>DESCUBRA SEU SITE</p>
+
+        <h1>Qual site combina com seu negócio?</h1>
+
+        <span>
+            Responda algumas perguntas rápidas e descubra qual tipo de projeto pode atender melhor aos seus objetivos.
+        </span>
+
+    </div>
+
+
+    <div class="contador" id="contador">
+        1 de 5
+    </div>
+
+    <div class="progresso">
+        <div class="barra" id="barra"></div>
+    </div>
+
+
+    <div class="pergunta ativa">
+
+        <h2>O que você quer alcançar com seu site?</h2>
+
+        <div class="opcoes">
+
+            <div class="opcao" data-pontos="1">Apresentar meu negócio</div>
+
+            <div class="opcao" data-pontos="2">Mostrar meus serviços</div>
+
+            <div class="opcao" data-pontos="3">Mostrar produtos ou catálogo</div>
+
+            <div class="opcao" data-pontos="3">Receber contatos e orçamentos</div>
+
+        </div>
+
+    </div>
+
+
+    <div class="pergunta">
+
+        <h2>O que você gostaria de mostrar?</h2>
+
+        <div class="opcoes">
+
+            <div class="opcao" data-pontos="1">Informações básicas</div>
+
+            <div class="opcao" data-pontos="2">Serviços</div>
+
+            <div class="opcao" data-pontos="3">Produtos</div>
+
+            <div class="opcao" data-pontos="3">Portfólio e trabalhos</div>
+
+        </div>
+
+    </div>
+
+
+    <div class="pergunta">
+
+        <h2>Quantas páginas você imagina?</h2>
+
+        <div class="opcoes">
+
+            <div class="opcao" data-pontos="1">Uma página</div>
+
+            <div class="opcao" data-pontos="2">Algumas páginas</div>
+
+            <div class="opcao" data-pontos="3">Um site completo</div>
+
+            <div class="opcao" data-pontos="2">Não sei ainda</div>
+
+        </div>
+
+    </div>
+
+
+    <div class="pergunta">
+
+        <h2>Como seus clientes devem entrar em contato?</h2>
+
+        <div class="opcoes">
+
+            <div class="opcao" data-pontos="1">WhatsApp</div>
+
+            <div class="opcao" data-pontos="2">Formulário</div>
+
+            <div class="opcao" data-pontos="2">Instagram</div>
+
+            <div class="opcao" data-pontos="3">Todos eles</div>
+
+        </div>
+
+    </div>
+
+
+    <div class="pergunta">
+
+        <h2>Você imagina algo mais simples ou personalizado?</h2>
+
+        <div class="opcoes">
+
+            <div class="opcao" data-pontos="1">Simples e objetivo</div>
+
+            <div class="opcao" data-pontos="2">Mais completo</div>
+
+            <div class="opcao" data-pontos="3">Totalmente personalizado</div>
+
+        </div>
+
+    </div>
+
+
+    <div class="resultado" id="resultado">
+
+        <p class="plano" id="nomePlano"></p>
+
+        <h2 id="tituloResultado"></h2>
+
+        <p id="textoResultado"></p>
+
+        <div class="botoes_resultado">
+
+            <a id="linkPlano" class="btn_principal">
+                Conhecer este plano
+            </a>
+
+            <a href="https://wa.me/5548998230477" class="btn_secundario">
+                Falar com a GR Digital
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<script>
+
+const perguntas = document.querySelectorAll(".pergunta");
+
+const barra = document.getElementById("barra");
+
+const contador = document.getElementById("contador");
+
+const resultado = document.getElementById("resultado");
+
+let atual = 0;
+
+let pontos = 0;
+
+
+document.querySelectorAll(".opcao").forEach(opcao => {
+
+    opcao.addEventListener("click", () => {
+
+        pontos += Number(opcao.dataset.pontos);
+
+        perguntas[atual].classList.remove("ativa");
+
+        atual++;
+
+        if(atual < perguntas.length){
+
+            perguntas[atual].classList.add("ativa");
+
+            contador.textContent = `${atual + 1} de ${perguntas.length}`;
+
+            barra.style.width = `${((atual + 1) / perguntas.length) * 100}%`;
+
+        } else {
+
+            mostrarResultado();
+
+        }
+
+    });
+
+});
+
+
+function mostrarResultado(){
+
+    contador.style.display = "none";
+
+    document.querySelector(".progresso").style.display = "none";
+
+    resultado.style.display = "block";
+
+    let nome;
+
+    let titulo;
+
+    let texto;
+
+    let link;
+
+
+    if(pontos <= 7){
+
+        nome = "PLANO ESSENCIAL";
+
+        titulo = "Comece sua presença digital.";
+
+        texto = "Pelas suas respostas, um site objetivo e profissional pode atender muito bem ao que você procura, apresentando seu negócio e facilitando o contato com seus clientes.";
+
+        link = "plano1.html";
+
+    }
+
+    else if(pontos <= 11){
+
+        nome = "PLANO PROFISSIONAL";
+
+        titulo = "Apresente seu negócio por completo.";
+
+        texto = "Suas respostas indicam que uma estrutura mais completa pode fazer sentido, com páginas para serviços, informações, galeria e diferentes formas de contato.";
+
+        link = "plano2.html";
+
+    }
+
+    else{
+
+        nome = "PLANO PERSONALIZADO";
+
+        titulo = "Um projeto feito para você.";
+
+        texto = "Pelo que você procura, um projeto mais personalizado pode ser a melhor opção, permitindo mais páginas, recursos e uma estrutura adaptada às necessidades do seu negócio.";
+
+        link = "plano3.html";
+
+    }
+
+
+    document.getElementById("nomePlano").textContent = nome;
+
+    document.getElementById("tituloResultado").textContent = titulo;
+
+    document.getElementById("textoResultado").textContent = texto;
+
+    document.getElementById("linkPlano").href = link;
+
+}
+
+</script>
+
+</body>
+
+</html>
