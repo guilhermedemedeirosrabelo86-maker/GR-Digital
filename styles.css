@@ -569,6 +569,114 @@ section {
 
 
 /* ========================================
+   DESCUBRA SEU SITE (DESTAQUE)
+======================================== */
+
+.descubra_destaque {
+
+    background: linear-gradient(135deg, var(--cor-principal), #FF8F74);
+
+    text-align: center;
+
+}
+
+
+.descubra_conteudo {
+
+    max-width: 680px;
+
+    margin: 0 auto;
+
+}
+
+
+.descubra_tag {
+
+    color: #FFE4DB;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.descubra_destaque h2 {
+
+    color: white;
+
+    font-family: var(--fonte-titulo);
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+}
+
+
+.descubra_texto {
+
+    color: #FFF0EB;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+
+}
+
+
+.btn_light {
+
+    display: inline-block;
+
+    padding: 16px 32px;
+
+    border-radius: 8px;
+
+    background-color: white;
+
+    color: var(--cor-principal);
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+
+}
+
+
+.btn_light:hover {
+
+    transform: translateY(-3px);
+
+    background-color: var(--texto-primario);
+
+    color: white;
+
+}
+
+
+@media (max-width: 600px) {
+
+    .descubra_destaque h2 {
+
+        font-size: 32px;
+
+    }
+
+}
+
+
+/* ========================================
    PLANOS
 ======================================== */
 
