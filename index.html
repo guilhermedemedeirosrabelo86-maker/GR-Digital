@@ -1,251 +1,354 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="GR Digital — criação de sites profissionais, responsivos e personalizados para negócios.">
     <title>GR Digital | Sites profissionais para o seu negócio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
 </head>
-
 <body>
 
 <header class="container_header">
-
     <div class="logo_site">
-        <a href="index.html"><img src="./logositegr.png" alt="GR Digital"></a>
+        <a href="index.html" aria-label="GR Digital - início">
+            <img src="./IMG/GR-FUNDO-TRANSPARENTE.png" alt="GR Digital">
+        </a>
     </div>
 
-    <nav>
-        <a href="index.html#sobre">Sobre</a>
-        <a href="index.html#planos">Planos</a>
+    <nav aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#planos">Planos</a>
         <a href="descubra.html">Descubra seu site</a>
-        <a href="index.html#contato">Contato</a>
-        <a href="https://instagram.com/" target="_blank" class="instagram_link">Instagram</a>
     </nav>
 
-    <a href="https://wa.me/5548998230477" class="btn_wpp">
-        Chamar no WhatsApp
-    </a>
-
+    <a href="https://wa.me/5548998230477?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20os%20sites%20da%20GR%20Digital." class="btn_wpp">Falar no WhatsApp</a>
 </header>
-
 
 <main>
 
-<!-- HERO -->
-<section class="hero">
+<section class="hero" id="inicio">
+    <div class="hero_grid">
+        <div class="hero_content">
+            <div class="hero_badge"><span></span> DESENVOLVIMENTO WEB</div>
+            <p class="hero_tag">GR DIGITAL</p>
+            <h1>Seu negócio merece uma <span>presença digital</span> à altura.</h1>
+            <p class="hero_text">
+                Criamos sites modernos, rápidos e personalizados para empresas que querem apresentar melhor sua marca, seus serviços e facilitar o contato com novos clientes.
+            </p>
+            <div class="hero_buttons">
+                <a href="#projetos" class="btn_principal">Ver projetos</a>
+                <a href="https://wa.me/5548998230477?text=Ol%C3%A1!%20Quero%20criar%20um%20site%20com%20a%20GR%20Digital." class="btn_outline">Quero meu site <span>↗</span></a>
+            </div>
+            <div class="hero_meta">
+                <div><strong>100%</strong><span>personalizado</span></div>
+                <div><strong>PC + Mobile</strong><span>responsivo</span></div>
+                <div><strong>WhatsApp</strong><span>conectado</span></div>
+            </div>
+        </div>
 
-    <div class="hero_content center">
+        <!-- MOCKUP DO SITE -->
+<div class="hero-mockup">
 
-        <p class="hero_tag">SITES PROFISSIONAIS</p>
+    <div class="mockup-browser">
 
-        <h1>Transforme seu negócio em uma <span>presença digital</span> de verdade.</h1>
+        <!-- Barra do navegador -->
+        <div class="mockup-topbar">
 
-        <p class="hero_text">
-            Criamos sites rápidos, bonitos e feitos sob medida para apresentar seu negócio, atrair clientes e facilitar o contato — sem complicação.
-        </p>
+            <div class="mockup-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-        <div class="hero_buttons">
-            <a href="descubra.html" class="btn_principal">Descubra seu site</a>
-            <a href="index.html#planos" class="btn_secundario">Ver planos</a>
+            <div class="mockup-url">
+                grdigital.com.br
+            </div>
+
+        </div>
+
+
+        <!-- Conteúdo do site -->
+        <div class="mockup-site">
+
+            <!-- Mini header -->
+            <div class="mockup-header">
+
+                <div class="mockup-logo">
+                    <img src="./IMG/GR-FUNDO-TRANSPARENTE.png" alt="GR Digital">
+                </div>
+
+                <div class="mockup-nav">
+                    <span>Sobre</span>
+                    <span>Serviços</span>
+                    <span>Projetos</span>
+                    <span>Planos</span>
+                    <span>Descubra seu site</span>
+                </div>
+
+            </div>
+
+
+            <!-- Mini hero -->
+            <div class="mockup-content">
+
+                <span class="mockup-tag">
+                    DESENVOLVIMENTO WEB
+                </span>
+
+                <h3>
+                    Sites que fazem<br>
+                    seu negócio aparecer.
+                </h3>
+
+                <div class="mockup-line"></div>
+
+                <p>
+                    Design personalizado para transformar
+                    sua presença digital.
+                </p>
+
+
+                <!-- Mini cards -->
+                <div class="mockup-cards">
+
+                    <div class="mockup-card">
+                        <span>01</span>
+                        <strong>DESIGN</strong>
+                        <small>PERSONALIZADO</small>
+                    </div>
+
+                    <div class="mockup-card">
+                        <span>02</span>
+                        <strong>EXPERIÊNCIA</strong>
+                        <small>RESPONSIVA</small>
+                    </div>
+
+                    <div class="mockup-card">
+                        <span>03</span>
+                        <strong>PERFORMANCE</strong>
+                        <small>OTIMIZADA</small>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
     </div>
 
+
+    <!-- Elementos flutuantes -->
+
+    <div class="mockup-badge mockup-badge-one">
+        <span>01</span>
+
+        <div>
+            <strong>DESIGN</strong>
+            <small>PERSONALIZADO</small>
+        </div>
+    </div>
+
+
+    <div class="mockup-badge mockup-badge-two">
+        <span>02</span>
+
+        <div>
+            <strong>RESPONSIVO</strong>
+            <small>DESKTOP + MOBILE</small>
+        </div>
+    </div>
+
+
+    <div class="mockup-badge mockup-badge-three">
+        <span>03</span>
+
+        <div>
+            <strong>RESULTADO</strong>
+            <small>FOCADO NO NEGÓCIO</small>
+        </div>
+    </div>
+
+</div>
 </section>
 
+<section class="trust_bar">
+    <div><span>01</span> DESIGN PERSONALIZADO</div>
+    <div><span>02</span> RESPONSIVO</div>
+    <div><span>03</span> PERFORMANCE</div>
+    <div><span>04</span> FOCO NO NEGÓCIO</div>
+</section>
 
-<!-- SOBRE -->
-<section id="sobre">
-
+<section class="section sobre" id="sobre">
     <div class="section_title">
-        <p>SOBRE A GR DIGITAL</p>
-        <h2>Sites feitos para gerar resultado, não só existir.</h2>
+        <p>POR QUE A GR DIGITAL</p>
+        <h2>Não é só colocar um site no ar. É construir uma presença.</h2>
     </div>
-
     <div class="sobre_grid">
-
         <div class="sobre_texto">
-            <p>Na GR Digital, cada projeto é pensado do zero para atender às necessidades reais do seu negócio — nada de templates genéricos que não conversam com sua marca.</p>
-            <p>Do primeiro contato à entrega, cuidamos do design, da estrutura e da performance para que seu site funcione como uma ferramenta de vendas, não apenas um cartão de visitas digital.</p>
+            <p>A GR Digital desenvolve sites pensados para transformar a identidade de um negócio em uma experiência digital profissional.</p>
+            <p>O projeto é construído de acordo com a marca, público e objetivo de cada empresa — desde uma landing page enxuta até uma presença digital mais completa.</p>
+            <a href="https://wa.me/5548998230477?text=Ol%C3%A1!%20Quero%20conversar%20sobre%20um%20projeto%20para%20minha%20empresa." class="text_link">Conversar sobre meu projeto <span>→</span></a>
         </div>
-
         <div class="sobre_dados">
-            <div>
-                <strong>100%</strong>
-                <span>Projetos personalizados</span>
+            <div><strong>01</strong><span>Projeto pensado para sua marca</span></div>
+            <div><strong>02</strong><span>Experiência em celular e computador</span></div>
+            <div><strong>03</strong><span>Contato facilitado com seus clientes</span></div>
+        </div>
+    </div>
+</section>
+
+<section class="section servicos" id="servicos">
+    <div class="section_title">
+        <p>O QUE FAZEMOS</p>
+        <h2>Estrutura, design e tecnologia para apresentar seu negócio.</h2>
+    </div>
+    <div class="servicos_grid">
+        <article class="servico_card"><span>01</span><h3>Landing Pages</h3><p>Páginas objetivas para apresentar serviços, campanhas, profissionais e negócios.</p></article>
+        <article class="servico_card"><span>02</span><h3>Sites profissionais</h3><p>Estruturas completas para empresas que precisam mostrar marca, serviços, projetos e diferenciais.</p></article>
+        <article class="servico_card"><span>03</span><h3>Design responsivo</h3><p>Uma experiência consistente no computador, tablet e celular, com foco em navegação.</p></article>
+        <article class="servico_card"><span>04</span><h3>Integrações</h3><p>WhatsApp, Instagram, Google Maps, formulários e outras ferramentas que ajudam o cliente a entrar em contato.</p></article>
+    </div>
+</section>
+
+<section class="section projetos" id="projetos">
+    <div class="section_head_row">
+        <div class="section_title">
+            <p>PORTFÓLIO</p>
+            <h2>Projetos que mostram o que podemos criar.</h2>
+        </div>
+        <div class="portfolio_note">Projetos demonstrativos e projetos próprios da GR Digital.</div>
+    </div>
+
+    <div class="projetos_grid">
+        <article class="projeto_card projeto_destaque">
+            <div class="projeto_preview barbearia_preview">
+                <div class="preview_browser">
+                    <div class="preview_top"><span></span><span></span><span></span><small>emersons-barbearia</small></div>
+                    <div class="preview_barbearia"><small>EMERSON'S</small><strong>BARBEARIA</strong><i>ESTILO • PRECISÃO • PRESENÇA</i></div>
+                    <div class="preview_services"><b></b><b></b><b></b></div>
+                </div>
             </div>
-:            <!-- <div>
-                <strong>+30</strong>
-                <span>Negócios atendidos</span>
-            </div> -->
-            <div>
-                <strong>5★</strong>
-                <span>Suporte próximo</span>
+            <div class="projeto_info">
+                <div class="project_status">PROJETO DEMONSTRATIVO</div>
+                <h3>Emerson's Barbearia</h3>
+                <p>Landing page premium para uma barbearia, com serviços, galeria, avaliações, localização e CTA para WhatsApp.</p>
+                <div class="project_tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <a href="https://github.com/guilhermedemedeirosrabelo86-maker/EMERSON-BARBEARIA" target="_blank" rel="noopener noreferrer" class="project_link">Ver projeto <span>↗</span></a>
             </div>
-        </div>
+        </article>
 
+        <article class="projeto_card projeto_conceito">
+            <div class="projeto_preview studio_preview"><div class="concept_label">CONCEITO VISUAL</div><strong>STUDIO<br>BEAUTY</strong><span>Projeto em desenvolvimento</span></div>
+            <div class="projeto_info">
+                <div class="project_status neutral">EM DESENVOLVIMENTO</div>
+                <h3>Studio de Estética</h3>
+                <p>Conceito de presença digital para um negócio de beleza, pensado para serviços, portfólio e agendamento.</p>
+                <div class="project_tags"><span>UI</span><span>UX</span><span>RESPONSIVO</span></div>
+            </div>
+        </article>
+
+        <article class="projeto_card projeto_conceito">
+            <div class="projeto_preview auto_preview"><div class="concept_label">CONCEITO VISUAL</div><strong>PRIME<br>DETAIL</strong><span>Projeto em desenvolvimento</span></div>
+            <div class="projeto_info">
+                <div class="project_status neutral">EM DESENVOLVIMENTO</div>
+                <h3>Prime Detail</h3>
+                <p>Conceito para estética automotiva, com foco em serviços, antes e depois, localização e orçamento.</p>
+                <div class="project_tags"><span>UI</span><span>UX</span><span>CONVERSÃO</span></div>
+            </div>
+        </article>
     </div>
-
 </section>
 
-
-<!-- BENEFÍCIOS -->
-<section class="beneficios">
-
-    <div class="section_title center">
-        <p>POR QUE ESCOLHER A GR DIGITAL</p>
-        <h2>Mais do que um site, uma parceria.</h2>
-    </div>
-
-    <div class="beneficios_container">
-
-        <div class="beneficio_card">
-            <p class="beneficio_numero">01</p>
-            <h3>Design personalizado</h3>
-            <p>Cada site é desenhado especialmente para a identidade do seu negócio.</p>
-        </div>
-
-        <div class="beneficio_card">
-            <p class="beneficio_numero">02</p>
-            <h3>Responsivo</h3>
-            <p>Seu site funciona perfeitamente em celular, tablet e computador.</p>
-        </div>
-
-        <div class="beneficio_card">
-            <p class="beneficio_numero">03</p>
-            <h3>Contato facilitado</h3>
-            <p>Botão de WhatsApp e formulários para transformar visitas em clientes.</p>
-        </div>
-
-        <div class="beneficio_card">
-            <p class="beneficio_numero">04</p>
-            <h3>Suporte próximo</h3>
-            <p>Acompanhamento direto com você do início ao pós-entrega.</p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- DESCUBRA SEU SITE (DESTAQUE) -->
-<section class="descubra_destaque" id="descubra">
-
-    <div class="descubra_conteudo">
-
-        <p class="descubra_tag">AINDA NÃO SABE POR ONDE COMEÇAR?</p>
-
-        <h2>Descubra qual site combina com o seu negócio.</h2>
-
-        <p class="descubra_texto">
-            Responda 5 perguntas rápidas e descubra, em menos de 2 minutos, qual plano encaixa melhor com o que você precisa.
-        </p>
-
-        <a href="descubra.html" class="btn_light">Fazer o teste agora</a>
-
-    </div>
-
-</section>
-
-
-<!-- PLANOS -->
-<section id="planos">
-
+<section class="section planos" id="planos">
     <div class="section_title center">
         <p>PLANOS</p>
-        <h2>Escolha o plano ideal para o seu negócio.</h2>
+        <h2>Escolha a estrutura que combina com o seu negócio.</h2>
+        <span>O domínio e a hospedagem são contratados separadamente. O domínio fica registrado em nome do cliente.</span>
     </div>
 
     <div class="planos_container">
-
-        <div class="plano_card">
+        <article class="plano_card">
             <p class="plano_nome">ESSENCIAL</p>
-            <h3>Comece sua presença digital</h3>
-            <p class="plano_descricao">Uma página profissional e objetiva para apresentar seu negócio.</p>
-            <ul>
-                <li>✓ Página profissional</li>
-                <li>✓ Design responsivo</li>
-                <li>✓ Botão WhatsApp</li>
-                <li>✓ Galeria de fotos</li>
-            </ul>
-            <a href="plano1.html" class="btn_plano">Conhecer plano</a>
-        </div>
+            <h3>Comece sua presença digital.</h3>
+            <p class="plano_descricao">Uma página profissional, objetiva e personalizada para apresentar seu negócio.</p>
+            <div class="preco"><small>A partir de</small><strong>R$ 790</strong><span>projeto</span></div>
+            <ul><li>✓ Até 4 seções</li><li>✓ Design personalizado</li><li>✓ Responsivo</li><li>✓ WhatsApp e redes sociais</li><li>✓ SEO básico</li><li>✓ Publicação</li><li>✓ Animações básicas</li></ul>
+            <div class="prazo">Prazo estimado: 5–7 dias</div>
+            <a href="plano1.html" class="btn_plano">Ver detalhes</a>
+        </article>
 
-        <div class="plano_card destaque">
-            <span class="mais_vendido">MAIS ESCOLHIDO</span>
+        <article class="plano_card destaque">
+            <div class="mais_vendido">MAIS PROCURADO</div>
             <p class="plano_nome">PROFISSIONAL</p>
-            <h3>Apresente seu negócio por completo</h3>
-            <p class="plano_descricao">Uma presença digital mais completa, com mais páginas e recursos.</p>
-            <ul>
-                <li>✓ Tudo do Essencial</li>
-                <li>✓ Página Sobre e Serviços</li>
-                <li>✓ Depoimentos e Google Maps</li>
-                <li>✓ Formulário de contato</li>
-            </ul>
-            <a href="plano2.html" class="btn_plano">Conhecer plano</a>
-        </div>
+            <h3>Apresente seu negócio por completo.</h3>
+            <p class="plano_descricao">Uma presença digital mais completa, com mais conteúdo, recursos e pontos de contato.</p>
+            <div class="preco"><small>A partir de</small><strong>R$ 1.490</strong><span>projeto</span></div>
+            <ul><li>✓ Tudo do Essencial</li><li>✓ Até 7 seções</li><li>✓ Galeria personalizada</li><li>✓ Avaliações/depoimentos</li><li>✓ Google Maps</li><li>✓ Formulário de contato</li><li>✓ Animações premium</li></ul>
+            <div class="prazo">Prazo estimado: 7–12 dias</div>
+            <a href="plano2.html" class="btn_plano btn_plano_gold">Ver detalhes</a>
+        </article>
 
-        <div class="plano_card">
-            <p class="plano_nome">PERSONALIZADO</p>
-            <h3>Um projeto feito para você</h3>
-            <p class="plano_descricao">Site sob medida, com mais páginas e recursos avançados.</p>
-            <ul>
-                <li>✓ Tudo do Profissional</li>
-                <li>✓ Layout exclusivo</li>
-                <li>✓ Animações avançadas</li>
-                <li>✓ SEO avançado</li>
-            </ul>
-            <a href="plano3.html" class="btn_plano">Conhecer plano</a>
-        </div>
-
+        <article class="plano_card">
+            <p class="plano_nome">PREMIUM</p>
+            <h3>Um projeto feito para você.</h3>
+            <p class="plano_descricao">Para negócios que precisam de mais páginas, recursos e personalização.</p>
+            <div class="preco"><small>A partir de</small><strong>R$ 2.490</strong><span>projeto</span></div>
+            <ul><li>✓ Tudo do Profissional</li><li>✓ Até 10 seções</li><li>✓ Páginas adicionais</li><li>✓ Catálogo completo</li><li>✓ Animações avançadas</li><li>✓ Integrações externas</li><li>✓ SEO avançado</li></ul>
+            <div class="prazo">Prazo estimado: 10–20 dias</div>
+            <a href="plano3.html" class="btn_plano">Ver detalhes</a>
+        </article>
     </div>
 
+    <div class="extras_grid">
+        <div><span>DOMÍNIO</span><strong>.com.br no nome do cliente</strong><p>O registro é feito em nome do cliente para que ele mantenha o controle do endereço do site.</p></div>
+        <div><span>MANUTENÇÃO</span><strong>A partir de R$ 79/mês</strong><p>Pequenas alterações de conteúdo, correções e suporte. Novas funcionalidades são orçadas à parte.</p></div>
+        <div><span>PAGAMENTO</span><strong>50% + 50%</strong><p>Metade para iniciar o projeto e metade na entrega.</p></div>
+    </div>
 </section>
 
+<section class="section processo">
+    <div class="section_title">
+        <p>COMO FUNCIONA</p>
+        <h2>Do primeiro contato à publicação.</h2>
+    </div>
+    <div class="processo_grid">
+        <div><b>01</b><h3>Conversa</h3><p>Entendemos seu negócio, objetivo e o que você precisa apresentar.</p></div>
+        <div><b>02</b><h3>Estratégia</h3><p>Definimos estrutura, conteúdo, identidade visual e recursos.</p></div>
+        <div><b>03</b><h3>Desenvolvimento</h3><p>Construímos o site com foco em design, responsividade e experiência.</p></div>
+        <div><b>04</b><h3>Publicação</h3><p>Configuramos o projeto e colocamos seu site no ar.</p></div>
+    </div>
+</section>
 
-<!-- CONTATO -->
 <section class="contato" id="contato">
-
     <div class="contato_content">
-        <p>VAMOS CONVERSAR?</p>
-        <h2>Pronto para ter um site profissional?</h2>
-        <p>Fale com a GR Digital agora mesmo e vamos transformar seu negócio em uma presença digital de verdade.</p>
-
+        <p>VAMOS TIRAR A IDEIA DO PAPEL?</p>
+        <h2>Seu próximo site pode começar com uma conversa.</h2>
+        <p>Conte um pouco sobre sua empresa e o que você imagina. A GR Digital pode transformar essa ideia em uma presença digital profissional.</p>
         <div class="contato_botoes">
-            <a href="https://wa.me/5548998230477" class="btn_principal">Chamar no WhatsApp</a>
-            <a href="https://instagram.com/" target="_blank" class="btn_instagram">Instagram</a>
+            <a href="https://wa.me/5548998230477?text=Ol%C3%A1!%20Quero%20conversar%20sobre%20um%20site%20para%20minha%20empresa." class="btn_principal">Falar no WhatsApp <span class="btn_arrow" aria-hidden="true">↗</span></a>
+            <a href="#projetos" class="btn_instagram">Ver portfólio</a>
+            <a href="https://www.instagram.com/grdigital_sites/" target="_blank" rel="noopener noreferrer" class="btn_instagram">Instagram <span class="btn_arrow" aria-hidden="true">↗</span></a>
         </div>
     </div>
-
 </section>
 
 </main>
 
-
 <footer>
-    <h3>GR <span>digital</span></h3>
-    <p>Sites profissionais para o seu negócio.</p>
-    <div class="footer_links">
-        <a href="index.html#sobre">Sobre</a>
-        <a href="index.html#planos">Planos</a>
-        <a href="index.html#descubra">Descubra seu site</a>
-        <a href="index.html#contato">Contato</a>
-        <a href="https://instagram.com/" target="_blank">Instagram</a>
+    <div class="footer_top">
+        <div><img src="./IMG/GR-FUNDO-TRANSPARENTE.png" alt="GR Digital"><p>Sites profissionais para negócios que querem crescer no digital.</p></div>
+        <div class="footer_links"><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#projetos">Projetos</a><a href="#planos">Planos</a><a href="descubra.html">Descubra seu site</a></div>
     </div>
-    <p class="copyright">© 2026 GR Digital. Todos os direitos reservados.</p>
+    <div class="footer_bottom"><span>© 2026 GR Digital. Todos os direitos reservados.</span><div><a href="https://wa.me/5548998230477">WhatsApp</a><a href="https://www.instagram.com/grdigital_sites/" target="_blank" rel="noopener noreferrer">Instagram</a></div></div>
 </footer>
 
 </body>
-
 </html>

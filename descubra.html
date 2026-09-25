@@ -29,26 +29,26 @@
         }
 
         .quiz_intro p {
-            color: var(--cor-principal);
+            color: var(--primary);
             font-size: 13px;
             font-weight: 700;
             letter-spacing: 2px;
         }
 
         .quiz_intro h1 {
-            font-family: var(--fonte-titulo);
+            font-family: var(--font-title);
             font-size: 48px;
             margin: 15px 0;
         }
 
         .quiz_intro span {
-            color: var(--texto-suave);
+            color: var(--muted);
             line-height: 1.7;
         }
 
         .progresso {
             height: 8px;
-            background: var(--borda);
+            background: var(--border);
             border-radius: 20px;
             margin-bottom: 40px;
             overflow: hidden;
@@ -57,14 +57,14 @@
         .barra {
             height: 100%;
             width: 20%;
-            background: var(--cor-principal);
+            background: var(--primary);
             transition: .3s;
         }
 
         .contador {
             text-align: right;
             font-size: 13px;
-            color: var(--texto-suave);
+            color: var(--muted);
             margin-bottom: 10px;
         }
 
@@ -77,7 +77,7 @@
         }
 
         .pergunta h2 {
-            font-family: var(--fonte-titulo);
+            font-family: var(--font-title);
             font-size: 32px;
             margin-bottom: 30px;
         }
@@ -89,7 +89,7 @@
 
         .opcao {
             padding: 20px;
-            border: 1px solid var(--borda);
+            border: 1px solid var(--border);
             border-radius: 12px;
             cursor: pointer;
             transition: .2s;
@@ -97,7 +97,7 @@
         }
 
         .opcao:hover {
-            border-color: var(--cor-principal);
+            border-color: var(--primary);
             transform: translateY(-2px);
         }
 
@@ -107,20 +107,20 @@
         }
 
         .resultado h2 {
-            font-family: var(--fonte-titulo);
+            font-family: var(--font-title);
             font-size: 42px;
             margin-bottom: 15px;
         }
 
         .resultado .plano {
-            color: var(--cor-principal);
+            color: var(--primary);
             font-weight: 700;
             letter-spacing: 2px;
             margin-bottom: 20px;
         }
 
         .resultado p {
-            color: var(--texto-suave);
+            color: var(--muted);
             line-height: 1.8;
             margin-bottom: 30px;
         }
@@ -130,6 +130,27 @@
             justify-content: center;
             gap: 15px;
             flex-wrap: wrap;
+        }
+
+        .btn_secundario {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 20px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, .025);
+            color: var(--white);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 800;
+            transition: .25s;
+        }
+
+        .btn_secundario:hover {
+            border-color: rgba(0, 212, 255, .4);
+            color: var(--primary);
+            transform: translateY(-3px);
         }
 
         @media(max-width:600px){
@@ -153,7 +174,7 @@
 <header class="container_header">
 
     <div class="logo_site">
-        <a href="index.html"><img src="./logositegr.png" alt="GR Digital"></a>
+        <a href="index.html"><img src="./IMG/GR-FUNDO-TRANSPARENTE.png" alt="GR Digital"></a>
     </div>
 
     <nav>
@@ -403,7 +424,7 @@ function mostrarResultado(){
 
     else{
 
-        nome = "PLANO PERSONALIZADO";
+        nome = "PLANO PREMIUM";
 
         titulo = "Um projeto feito para você.";
 
