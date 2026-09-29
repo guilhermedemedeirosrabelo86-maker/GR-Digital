@@ -2110,3 +2110,46 @@ a:hover .arrow_icon {
         display: none
     }
 }
+
+/* =========================================
+   PROJETOS — IMAGEM OCUPANDO TODO O ESPAÇO
+========================================= */
+
+.projeto_card {
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.projeto_preview,
+.projeto_destaque .projeto_preview {
+    width: 100%;
+    height: 360px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    border-radius: 0;
+    display: block;
+    background: #111;
+}
+
+.projeto_preview img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border: 0;
+    border-radius: 0;
+    transition: transform 0.5s ease;
+}
+
+.projeto_card:hover .projeto_preview img {
+    transform: scale(1.04);
+}
+
+.projeto_info {
+    padding: 25px;
+}
