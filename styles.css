@@ -1000,6 +1000,176 @@ a:hover .arrow_icon {
     line-height: 1.55
 }
 
+/* ---------- Quem está por trás ---------- */
+
+.quem_sou {
+    padding-top: clamp(40px, 6vw, 70px);
+    overflow: hidden
+}
+
+.quem_grid {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: clamp(40px, 7vw, 100px);
+    align-items: center
+}
+
+.quem_foto {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+    justify-self: center
+}
+
+.quem_foto::before {
+    content: "";
+    position: absolute;
+    inset: 10% -8% -6% 8%;
+    z-index: -1;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(0, 212, 255, .28), rgba(168, 85, 247, .26));
+    filter: blur(70px);
+    animation: mockup-glow 6s ease-in-out infinite alternate
+}
+
+.quem_foto_frame {
+    position: relative;
+    padding: 1px;
+    border-radius: 28px;
+    background: var(--grad);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, .5)
+}
+
+.quem_foto_frame::after {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: 27px;
+    background: linear-gradient(180deg, transparent 60%, rgba(6, 8, 12, .55));
+    pointer-events: none
+}
+
+.quem_foto_frame img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 27px;
+    transition: transform .9s var(--ease)
+}
+
+.quem_foto:hover .quem_foto_frame img {
+    transform: scale(1.015)
+}
+
+.quem_selo {
+    position: absolute;
+    left: -24px;
+    bottom: 36px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    border: 1px solid var(--border-strong);
+    border-radius: 14px;
+    background: rgba(12, 17, 25, .85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .4);
+    animation: badge-bob 4.5s ease-in-out infinite
+}
+
+.quem_selo_dot {
+    flex-shrink: 0;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--green);
+    animation: pulse-dot 2s infinite
+}
+
+.quem_selo strong {
+    display: block;
+    font-size: 14px
+}
+
+.quem_selo small {
+    display: block;
+    color: var(--muted);
+    font-size: 12px
+}
+
+.quem_bio {
+    margin: 30px 0;
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.8
+}
+
+.quem_bio p + p {
+    margin-top: 18px
+}
+
+.quem_pontos {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 34px
+}
+
+.quem_pontos li {
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .02)
+}
+
+.quem_pontos strong {
+    display: block;
+    margin-bottom: 6px;
+    font-family: var(--font-title);
+    font-size: 16px
+}
+
+.quem_pontos span {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.55
+}
+
+@media (max-width: 980px) {
+    .quem_grid {
+        grid-template-columns: 1fr
+    }
+
+    .quem_foto {
+        max-width: 380px
+    }
+}
+
+@media (max-width: 760px) {
+    .quem_foto {
+        max-width: 300px
+    }
+
+    .quem_selo {
+        left: 50%;
+        bottom: -22px;
+        white-space: nowrap;
+        translate: -50% 0
+    }
+
+    .quem_texto {
+        margin-top: 16px
+    }
+
+    .quem_pontos {
+        grid-template-columns: 1fr
+    }
+}
+
 /* ---------- Serviços ---------- */
 
 .servicos_grid {
